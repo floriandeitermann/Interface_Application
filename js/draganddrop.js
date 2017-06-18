@@ -45,6 +45,16 @@ $(document).mousemove(function (event) {
         point[i] = $(this).offset();
     });
 
+    // Disable Drag&Drop bei Dragpoints
+    if ($('.dragpoint:hover').length != 0) {
+        $('.element1').draggable("disable")
+    } else {
+        $('.element1').draggable("enable")
+    }
+
+    $('.dragpoint').click(function() {
+        $("#curve").css({"display": "block"});
+    });
 
     d =
         "M" + Math.round(point[0].left + 10) + "," + (point[0].top + 10) + " C" + (point[0].left + 50) + "," + point[0].top + " " +
@@ -59,13 +69,10 @@ $(document).mousemove(function (event) {
     // });
 
 
-    if (mouseX > width / 100 * 12) {
-        $(".element1.ui-draggable-dragging").css({"width": "100", "height": "100"});
-        $("#curve").css({"display": "none"});
-    }
-    if (mouseX < width / 100 * 12) {
-        $(".element1.ui-draggable-dragging").css({"width": "40", "height": "40"});
-        $("#curve").css({"display": "none"});
+    if (mouseX > width / 100 * 12 && mouseX < width / 100 * 88) {
+        $(".ui-draggable-dragging").css({"width": "100", "height": "100"});
+    } else {
+        $(".ui-draggable-dragging").css({"width": "40", "height": "40"});
     }
 
 
