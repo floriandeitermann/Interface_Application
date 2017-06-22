@@ -2,7 +2,6 @@
  * Created by Max on 12.06.17.
  */
 
-
 var width = $(document).width();
 
 var mouseX,
@@ -13,20 +12,28 @@ var mouseX,
 // Curve
 var d;
 
-var fill = "#fff";
-
 line.curve = svg.getElementById("curve");
-
 
 
 $(function () {
     $(".draggable").draggable();
+
+    //erstellt beim Draggen eine transparente Kopie
+    $( ".draggable2" ).draggable({
+        cursor: "move",
+        cursorAt: { top: 10, left: 10 },
+        helper: function( event ) {
+            return $("<div class='helper'></div>");
+        }
+    });
+
 });
 
 
 $(document).mousemove(function (event) {
     mouseX = event.pageX;
     mouseY = event.pageY;
+
 
     // Speichert die gedraggten Elemente in point[i] ab
     $('.dragpoint').each(function(i) {
@@ -43,17 +50,15 @@ $(document).mousemove(function (event) {
         point[i] = $(this).offset();
     });
 
-    console.log(point[0].left);
-    console.log(point[1].left);
 
 
+    $(".dragpoint").mousemove(function() {
 
-    $( ".dragpoint" ).mousedown(function() {
         console.log($(this).attr('id').slice(1,2));
 
         d =
-            "M" + Math.round(point[0].left + 10) + "," + (point[0].top + 10) + " C" + (point[0].left + 50) + "," + point[0].top + " " +
-            (point[$(this).attr('id').slice(1,2)].left - 50) + "," + (point[$(this).attr('id').slice(1,2)].top + 50) +' '+ (point[$(this).attr('id').slice(1,2)].left + 10) + "," + (point[$(this).attr('id').slice(1,2)].top + 10);
+            "M" + Math.round(point[$(this).attr('id').slice(1,2)].left + 10) + "," + (point[$(this).attr('id').slice(1,2)].top + 10) + " C" + (point[$(this).attr('id').slice(1,2)].left + 50) + "," + point[$(this).attr('id').slice(1,2)].top + " " +
+            (mouseX - 50) + "," + (mouseY + 50) +' '+ (mouseX + 10) + "," + (mouseY + 10);
         line.curve.setAttributeNS(null, "d", d);
 
     });
@@ -72,12 +77,14 @@ $(document).mousemove(function (event) {
     // });
 
     if (mouseX > width / 100 * 12 && mouseX < width / 100 * 88) {
-        $(".ui-draggable-dragging").css({"width": "100", "height": "100"});
+        $(".ui-draggable-dragging.element1").css({"width": "100", "height": "100"});
+        $(".ui-draggable-dragging.element2").css({"width": "100", "height": "100"});
     } else {
-        $(".ui-draggable-dragging").css({"width": "40", "height": "40"});
+        $(".ui-draggable-dragging.element1").css({"width": "40", "height": "40"});
+        $(".ui-draggable-dragging.element2").css({"width": "40", "height": "40"});
     }
 
-    // Disable Drag & Drop bei Dragpoints
+    // Disable draggable bei Dragpoints
     if ($('.dragpoint:hover').length != 0) {
         $('.element1').draggable("disable")
     } else {

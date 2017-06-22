@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="161px" height="179px" viewBox="0 0 161 179" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="95" height="16" rx="2"></rect>
+        <rect id="path-2" x="24" y="11" width="127" height="24"></rect>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="127" height="24" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <rect id="path-4" x="24" y="45" width="127" height="24"></rect>
+        <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="127" height="24" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+        <rect id="path-6" x="0" y="0" width="92" height="16" rx="2"></rect>
+        <rect id="path-7" x="0" y="0" width="92" height="16" rx="2"></rect>
+        <rect id="path-8" x="0" y="0" width="95" height="16" rx="2"></rect>
+        <rect id="path-9" x="0" y="0" width="95" height="16" rx="2"></rect>
+    </defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Screen-01-" transform="translate(-720.000000, -579.000000)">
+            <g id="Group-3" transform="translate(720.000000, 579.000000)">
+                <rect id="Rectangle-2-Copy-8" fill="#4A4A4A" x="1" y="0" width="160" height="97" rx="2"></rect>
+                <g id="eingabefeld_dropwdown" transform="translate(9.000000, 8.000000)">
+                    <g id="Declaration" transform="translate(0.000000, 1.000000)" font-size="10" font-family="RobotoMono-Bold, Roboto Mono" letter-spacing="-0.099999994" fill="#F1F1F1" font-weight="bold">
+                        <text id="Parameter:">
+                            <tspan x="0" y="10">A:</tspan>
+                        </text>
+                    </g>
+                    <g id="input" stroke-width="1" fill-rule="evenodd" transform="translate(48.000000, 0.000000)">
+                        <g id="feld">
+                            <g id="Rectangle-2-Copy-2">
+                                <use fill-opacity="0.5" fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                <rect stroke="#505050" stroke-width="1" x="0.5" y="0.5" width="94" height="15" rx="2"></rect>
+                            </g>
+                            <g id="Value" transform="translate(4.000000, 0.000000)" font-weight="normal" font-family="RobotoMono-Regular, Roboto Mono" line-spacing="17" letter-spacing="-0.099999994" fill="#F1F1F1" font-size="10">
+                                <text id="2004">
+                                    <tspan x="0" y="10">"Blue"</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-2" transform="translate(0.000000, 99.000000)">
+                    <rect id="Rectangle-2-Copy-9" fill="#4A4A4A" x="0" y="0" width="160" height="80" rx="2"></rect>
+                    <use id="Rectangle-6-Copy-2" stroke="#979797" mask="url(#mask-3)" stroke-dasharray="2" xlink:href="#path-2"></use>
+                    <use id="Rectangle-6-Copy-3" stroke="#979797" mask="url(#mask-5)" stroke-dasharray="2" xlink:href="#path-4"></use>
+                    <g id="eingabefeld_dropwdown" transform="translate(8.000000, 15.000000)">
+                        <g id="Declaration" transform="translate(0.000000, 1.000000)" font-size="10" font-family="RobotoMono-Bold, Roboto Mono" letter-spacing="-0.099999994" fill="#F1F1F1" font-weight="bold">
+                            <text id="Parameter:">
+                                <tspan x="0" y="10">A:</tspan>
+                            </text>
+                        </g>
+                        <g id="input" stroke-width="1" fill-rule="evenodd" transform="translate(46.000000, 0.000000)">
+                            <g id="feld">
+                                <g id="Rectangle-2-Copy-2">
+                                    <use fill-opacity="0.5" fill="#000000" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                    <rect stroke="#505050" stroke-width="1" x="0.5" y="0.5" width="91" height="15" rx="2"></rect>
+                                </g>
+                                <g id="Value" transform="translate(4.000000, 0.000000)" font-weight="normal" font-family="RobotoMono-Regular, Roboto Mono" line-spacing="17" letter-spacing="-0.099999994" fill="#F1F1F1" font-size="10">
+                                    <text id="2004">
+                                        <tspan x="0" y="10">#565674</tspan>
+                                    </text>
+                                </g>
+                                <g id="Up/Down" transform="translate(76.000000, 0.000000)">
+                                    <g>
+                                        <path d="M0.5,0.5 L0.5,15.5 L14.0059397,15.5 C14.8300132,15.5 15.5,14.8304174 15.5,14.0059397 L15.5,1.99406028 C15.5,1.16998678 14.8304174,0.5 14.0059397,0.5 L0.5,0.5 Z" id="Rectangle-2-Copy-2" stroke="#505050"></path>
+                                        <polygon id="Triangle" fill="#505050" points="8 4 11 6 5 6"></polygon>
+                                        <polygon id="Triangle" fill="#505050" transform="translate(8.000000, 11.000000) scale(1, -1) translate(-8.000000, -11.000000) " points="8 10 11 12 5 12"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <circle id="Oval-2-Copy-2" fill="#197AFF" cx="39" cy="23" r="8"></circle>
+                    <circle id="Oval-2-Copy-3" fill="#197AFF" cx="39" cy="57" r="8"></circle>
+                    <g id="eingabefeld_dropwdown" transform="translate(8.000000, 49.000000)">
+                        <g id="Declaration" transform="translate(0.000000, 1.000000)" font-size="10" font-family="RobotoMono-Bold, Roboto Mono" letter-spacing="-0.099999994" fill="#F1F1F1" font-weight="bold">
+                            <text id="Parameter:">
+                                <tspan x="0" y="10">B:</tspan>
+                            </text>
+                        </g>
+                        <g id="input" stroke-width="1" fill-rule="evenodd" transform="translate(46.000000, 0.000000)">
+                            <g id="feld">
+                                <g id="Rectangle-2-Copy-2">
+                                    <use fill-opacity="0.5" fill="#000000" fill-rule="evenodd" xlink:href="#path-7"></use>
+                                    <rect stroke="#505050" stroke-width="1" x="0.5" y="0.5" width="91" height="15" rx="2"></rect>
+                                </g>
+                                <g id="Value" transform="translate(4.000000, 0.000000)" font-weight="normal" font-family="RobotoMono-Regular, Roboto Mono" line-spacing="17" letter-spacing="-0.099999994" fill="#F1F1F1" font-size="10">
+                                    <text id="2004">
+                                        <tspan x="0" y="10">82° (cw)</tspan>
+                                    </text>
+                                </g>
+                                <g id="Up/Down" transform="translate(76.000000, 0.000000)">
+                                    <g>
+                                        <path d="M0.5,0.5 L0.5,15.5 L14.0059397,15.5 C14.8300132,15.5 15.5,14.8304174 15.5,14.0059397 L15.5,1.99406028 C15.5,1.16998678 14.8304174,0.5 14.0059397,0.5 L0.5,0.5 Z" id="Rectangle-2-Copy-2" stroke="#505050"></path>
+                                        <polygon id="Triangle" fill="#505050" points="8 4 11 6 5 6"></polygon>
+                                        <polygon id="Triangle" fill="#505050" transform="translate(8.000000, 11.000000) scale(1, -1) translate(-8.000000, -11.000000) " points="8 10 11 12 5 12"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="eingabefeld_dropwdown" transform="translate(9.000000, 32.000000)">
+                    <g id="Declaration" transform="translate(0.000000, 1.000000)" font-size="10" font-family="RobotoMono-Bold, Roboto Mono" letter-spacing="-0.099999994" fill="#F1F1F1" font-weight="bold">
+                        <text id="Parameter:">
+                            <tspan x="0" y="10">B:</tspan>
+                        </text>
+                    </g>
+                    <g id="input" stroke-width="1" fill-rule="evenodd" transform="translate(48.000000, 0.000000)">
+                        <g id="feld">
+                            <g id="Rectangle-2-Copy-2">
+                                <use fill-opacity="0.5" fill="#000000" fill-rule="evenodd" xlink:href="#path-8"></use>
+                                <rect stroke="#505050" stroke-width="1" x="0.5" y="0.5" width="94" height="15" rx="2"></rect>
+                            </g>
+                            <g id="Value" transform="translate(4.000000, 0.000000)" font-weight="normal" font-family="RobotoMono-Regular, Roboto Mono" line-spacing="17" letter-spacing="-0.099999994" fill="#F1F1F1" font-size="10">
+                                <text id="2004">
+                                    <tspan x="0" y="10">"Rotate"</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="eingabefeld_dropwdown" opacity="0.501868207" transform="translate(10.000000, 56.000000)">
+                    <g id="Declaration" transform="translate(0.000000, 1.000000)" font-size="10" font-family="RobotoMono-Bold, Roboto Mono" letter-spacing="-0.099999994" fill="#F1F1F1" font-weight="bold">
+                        <text id="Parameter:">
+                            <tspan x="0" y="10">C:</tspan>
+                        </text>
+                    </g>
+                    <g id="input" stroke-width="1" fill-rule="evenodd" transform="translate(48.000000, 0.000000)">
+                        <g id="feld">
+                            <g id="Rectangle-2-Copy-2">
+                                <use fill-opacity="0.5" fill="#000000" fill-rule="evenodd" xlink:href="#path-9"></use>
+                                <rect stroke="#505050" stroke-width="1" x="0.5" y="0.5" width="94" height="15" rx="2"></rect>
+                            </g>
+                            <g id="Value" transform="translate(4.000000, 0.000000)" font-weight="normal" font-family="RobotoMono-Regular, Roboto Mono" line-spacing="17" letter-spacing="-0.099999994" fill="#F1F1F1" font-size="10">
+                                <text id="2004">
+                                    <tspan x="0" y="10">New String</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <polygon id="Triangle-Copy-4" fill="#8B8B8B" points="80.5 85 88 90 73 90"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

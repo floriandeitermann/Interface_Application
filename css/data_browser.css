@@ -8,6 +8,16 @@
     background-color: black;
     opacity: 0;
 }
+
+.helper {
+    width: 20px;
+    height: 20px;
+    border: 4px solid indianred;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.5;
+}
+
 /*----------- Databrowser ------------*/
 .data_browser {
     top: 82px;
@@ -34,7 +44,7 @@
     transition: width 0.3s ease, height 0.3s ease;
 }
 
-/*----------- Databrowser ------------*/
+/*----------- Blocksbrowser ------------*/
 .blocks_browser {
     position: fixed;
     top: 82px;
@@ -58,4 +68,12 @@
     margin: 0 auto;
     background-color: #EF2D56;
     transition: width 0.3s ease, height 0.3s ease;
+}
+
+/*----------- Settings ------------*/
+
+.settings {
+    position: absolute;
+    left: 800px;
+    top: 400px;
 }
