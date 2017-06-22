@@ -12,6 +12,9 @@ var mouseX,
 // Curve
 var d;
 
+var dPoint;
+
+
 line.curve = svg.getElementById("curve");
 
 
@@ -52,14 +55,27 @@ $(document).mousemove(function (event) {
 
 
 
-    $(".dragpoint").mousemove(function() {
 
-        console.log($(this).attr('id').slice(1,2));
+
+    $(".helper").mousemove(function() {
+
+        $("#curve").css({"opacity": "1"});
+
+        // console.log($(this).offset().left);
+
+        $(".dragpoint").mouseover(function() {
+            // console.log($(this).attr('id').slice(1,2));
+            dPoint = $(this).attr('id').slice(1,2);
+        });
 
         d =
-            "M" + Math.round(point[$(this).attr('id').slice(1,2)].left + 10) + "," + (point[$(this).attr('id').slice(1,2)].top + 10) + " C" + (point[$(this).attr('id').slice(1,2)].left + 50) + "," + point[$(this).attr('id').slice(1,2)].top + " " +
-            (mouseX - 50) + "," + (mouseY + 50) +' '+ (mouseX + 10) + "," + (mouseY + 10);
+            "M" + (point[dPoint].left + 10) + "," + (point[dPoint].top + 10) + " C" + (point[dPoint].left + 50) + "," + point[dPoint].top + " " +
+            (mouseX - 50) + "," + (mouseY + 10) +' '+ (mouseX) + "," + (mouseY);
         line.curve.setAttributeNS(null, "d", d);
+
+        $(".helper").mouseup(function() {
+            $("#curve").css({"opacity": "0"});
+        });
 
     });
 
@@ -76,6 +92,8 @@ $(document).mousemove(function (event) {
     //     console.log(this.id + " x:" + offset.left + " y:" + offset.top + " )");
     // });
 
+
+    // Morph Elements when moving to Canvas
     if (mouseX > width / 100 * 12 && mouseX < width / 100 * 88) {
         $(".ui-draggable-dragging.element1").css({"width": "100", "height": "100"});
         $(".ui-draggable-dragging.element2").css({"width": "100", "height": "100"});

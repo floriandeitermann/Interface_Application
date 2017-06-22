@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ee582c-1074-4090-9ddb-c45a437effde" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/data_browser.css" afterPath="$PROJECT_DIR$/css/data_browser.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/draganddrop.js" afterPath="$PROJECT_DIR$/js/draganddrop.js" />
     </list>
     <ignored path="Application.iws" />
@@ -24,14 +22,14 @@
     <favorites_list name="Application" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.39444444">
+    <splitter split-orientation="horizontal" split-proportion="0.36319444">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="6">
-                  <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+                <state relative-caret-position="15">
+                  <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -66,12 +64,14 @@
           <file leaf-file-name="draganddrop.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/draganddrop.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="720">
-                  <caret line="83" column="42" selection-start-line="83" selection-start-column="42" selection-end-line="83" selection-end-column="42" />
+                <state relative-caret-position="195">
+                  <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
                   <folding>
-                    <element signature="e#205#501#0" expanded="false" />
-                    <element signature="e#2638#2689#0" expanded="false" />
-                    <element signature="e#2695#2745#0" expanded="false" />
+                    <element signature="e#219#515#0" expanded="false" />
+                    <element signature="e#2455#2632#0" expanded="false" />
+                    <element signature="e#2638#2811#0" expanded="false" />
+                    <element signature="e#2896#2947#0" expanded="false" />
+                    <element signature="e#2953#3003#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -246,12 +246,12 @@
       <workItem from="1497254296167" duration="227000" />
       <workItem from="1497254592433" duration="10189000" />
       <workItem from="1497789974069" duration="1844000" />
-      <workItem from="1498129380409" duration="7088000" />
+      <workItem from="1498129380409" duration="10294000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33231000" />
+    <option name="totallyTimeSpent" value="36437000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -325,9 +325,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#205#501#0" expanded="false" />
-            <element signature="e#2638#2689#0" expanded="false" />
-            <element signature="e#2695#2745#0" expanded="false" />
+            <element signature="e#219#515#0" expanded="false" />
+            <element signature="e#2455#2632#0" expanded="false" />
+            <element signature="e#2638#2811#0" expanded="false" />
+            <element signature="e#2896#2947#0" expanded="false" />
+            <element signature="e#2953#3003#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -538,23 +540,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/draganddrop.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-          <folding />
+        <state relative-caret-position="195">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <element signature="e#219#515#0" expanded="false" />
+            <element signature="e#2455#2632#0" expanded="false" />
+            <element signature="e#2638#2811#0" expanded="false" />
+            <element signature="e#2896#2947#0" expanded="false" />
+            <element signature="e#2953#3003#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/draganddrop.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="83" column="42" selection-start-line="83" selection-start-column="42" selection-end-line="83" selection-end-column="42" />
-          <folding>
-            <element signature="e#205#501#0" expanded="false" />
-            <element signature="e#2638#2689#0" expanded="false" />
-            <element signature="e#2695#2745#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
