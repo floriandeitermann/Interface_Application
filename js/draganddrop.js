@@ -28,12 +28,10 @@ $(document).mousemove(function (event) {
     mouseX = event.pageX;
     mouseY = event.pageY;
 
-
     // Speichert die gedraggten Elemente in point[i] ab
     $('.dragpoint').each(function(i) {
 
         if ($(this).parent().hasClass("ui-draggable-dragging")) {
-            console.log($(this).offset());
 
             // Blendet die Dragpoints ein und aus
             if (mouseX > width / 100 * 12 && mouseX < width / 100 * 88) {
@@ -45,21 +43,26 @@ $(document).mousemove(function (event) {
         point[i] = $(this).offset();
     });
 
-    // Disable Drag&Drop bei Dragpoints
-    if ($('.dragpoint:hover').length != 0) {
-        $('.element1').draggable("disable")
-    } else {
-        $('.element1').draggable("enable")
-    }
+    console.log(point[0].left);
+    console.log(point[1].left);
 
-    $('.dragpoint').click(function() {
-        $("#curve").css({"display": "block"});
+
+
+    $( ".dragpoint" ).mousedown(function() {
+        console.log($(this).attr('id').slice(1,2));
+
+        d =
+            "M" + Math.round(point[0].left + 10) + "," + (point[0].top + 10) + " C" + (point[0].left + 50) + "," + point[0].top + " " +
+            (point[$(this).attr('id').slice(1,2)].left - 50) + "," + (point[$(this).attr('id').slice(1,2)].top + 50) +' '+ (point[$(this).attr('id').slice(1,2)].left + 10) + "," + (point[$(this).attr('id').slice(1,2)].top + 10);
+        line.curve.setAttributeNS(null, "d", d);
+
     });
 
-    d =
-        "M" + Math.round(point[0].left + 10) + "," + (point[0].top + 10) + " C" + (point[0].left + 50) + "," + point[0].top + " " +
-        (point[1].left - 50) + "," + (point[1].top + 50) +' '+ (point[1].left + 10) + "," + (point[1].top + 10);
-    line.curve.setAttributeNS(null, "d", d);
+
+    // d =
+    //     "M" + Math.round(point[0].left + 10) + "," + (point[0].top + 10) + " C" + (point[0].left + 50) + "," + point[0].top + " " +
+    //     (point[1].left - 50) + "," + (point[1].top + 50) +' '+ (point[1].left + 10) + "," + (point[1].top + 10);
+    // line.curve.setAttributeNS(null, "d", d);
 
     //
     // $(".draggable").mousemove(function (event) {
@@ -68,15 +71,18 @@ $(document).mousemove(function (event) {
     //     console.log(this.id + " x:" + offset.left + " y:" + offset.top + " )");
     // });
 
-
     if (mouseX > width / 100 * 12 && mouseX < width / 100 * 88) {
         $(".ui-draggable-dragging").css({"width": "100", "height": "100"});
     } else {
         $(".ui-draggable-dragging").css({"width": "40", "height": "40"});
     }
 
-
-
+    // Disable Drag & Drop bei Dragpoints
+    if ($('.dragpoint:hover').length != 0) {
+        $('.element1').draggable("disable")
+    } else {
+        $('.element1').draggable("enable")
+    }
 
 });
 
