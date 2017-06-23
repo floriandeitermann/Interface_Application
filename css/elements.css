@@ -66,7 +66,8 @@
     width: 40px;
     height: 40px;
     margin: 0 auto;
-    background-color: #EF2D56;
+    background-image: url("../img/Speech_Block.svg");
+    background-size: cover;
     transition: width 0.3s ease, height 0.3s ease;
 }
 

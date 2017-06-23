@@ -95,8 +95,8 @@ $(document).mousemove(function (event) {
 
     // Morph Elements when moving to Canvas
     if (mouseX > width / 100 * 12 && mouseX < width / 100 * 88) {
-        $(".ui-draggable-dragging.element1").css({"width": "100", "height": "100"});
-        $(".ui-draggable-dragging.element2").css({"width": "100", "height": "100"});
+        $(".ui-draggable-dragging.element1").css({"width": "110", "height": "110"});
+        $(".ui-draggable-dragging.element2").css({"width": "110", "height": "110"});
     } else {
         $(".ui-draggable-dragging.element1").css({"width": "40", "height": "40"});
         $(".ui-draggable-dragging.element2").css({"width": "40", "height": "40"});
