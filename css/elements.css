@@ -71,10 +71,16 @@
     transition: width 0.3s ease, height 0.3s ease;
 }
 
+.settings {
+    width: 40px;
+    height: 60px;
+    margin: 20px auto 0;
+    background-image: url("../img/settings.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: width 0.3s ease, height 0.3s ease;
+    opacity: 0;
+}
+
 /*----------- Settings ------------*/
 
-.settings {
-    position: absolute;
-    left: 800px;
-    top: 400px;
-}
