@@ -1,0 +1,9 @@
+
+.box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #5299FF;
+    margin: 25vh auto 0;
+
+}

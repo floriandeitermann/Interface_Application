@@ -17,7 +17,7 @@ var dPoint;
 
 line.curve = svg.getElementById("curve");
 
-
+// Activate Drag & Drop
 $(function () {
     $(".draggable").draggable({ grid: [ 8, 8 ] });
 
@@ -55,8 +55,6 @@ $(document).mousemove(function (event) {
 
 
 
-
-
     $(".helper").mousemove(function() {
 
         $("#curve").css({"opacity": "1"});
@@ -69,7 +67,8 @@ $(document).mousemove(function (event) {
         });
 
         d =
-            "M" + (point[dPoint].left + 10) + "," + (point[dPoint].top + 10) + " C" + (point[dPoint].left + 50) + "," + point[dPoint].top + " " +
+            "M" + (point[dPoint].left + 5) + "," + (point[dPoint].top + 5) + " C" +
+            (point[dPoint].left + 20) + "," + (point[dPoint].top - 100) + " " +
             (mouseX - 50) + "," + (mouseY + 10) +' '+ (mouseX) + "," + (mouseY);
         line.curve.setAttributeNS(null, "d", d);
 
@@ -96,12 +95,12 @@ $(document).mousemove(function (event) {
     // Morph Elements when moving to Canvas
     if (mouseX > width / 100 * 12 && mouseX < width / 100 * 88) {
         $(".ui-draggable-dragging.element1").css({"width": "110", "height": "110"});
-        $(".ui-draggable-dragging.element2").css({"width": "110", "height": "110"});
-        $(".ui-draggable-dragging.element2 > .settings").css({"opacity": "1", "width": "110", "height": "130", "margin": "90px auto 0"});
+        $(".ui-draggable-dragging.block_element").css({"width": "110", "height": "110"});
+        $(".ui-draggable-dragging.block_element > .settings").css({"opacity": "1", "width": "110", "height": "130", "margin": "90px auto 0"});
     } else {
         $(".ui-draggable-dragging.element1").css({"width": "40", "height": "40"});
-        $(".ui-draggable-dragging.element2").css({"width": "40", "height": "40"});
-        $(".ui-draggable-dragging.element2 > .settings").css({"opacity": "0", "width": "0", "height": "0", "margin": "20px auto 0"});
+        $(".ui-draggable-dragging.block_element").css({"width": "40", "height": "40"});
+        $(".ui-draggable-dragging.block_element > .settings").css({"opacity": "0", "width": "0", "height": "0", "margin": "20px auto 0"});
     }
 
     // Disable draggable bei Dragpoints
