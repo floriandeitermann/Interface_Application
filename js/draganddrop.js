@@ -17,7 +17,7 @@ var dPoint;
 
 line.curve = svg.getElementById("curve");
 
-// Activate Drag & Drop
+// init Drag & Drop
 $(function () {
     $(".draggable").draggable({ grid: [ 8, 8 ] });
 

@@ -15,22 +15,7 @@ body {
     height: 100vh;
     overflow-x: hidden;
     position: relative;
-    background-color: black;
     box-sizing: border-box;
-}
-
-.topbar {
-    width: 100vw;
-    height: 22px;
-    background-image: url("../img/menubar_ios.jpg");
-    background-size: cover;
-}
-
-.toolbar {
-    width: 100vw;
-    height: 60px;
-    background-image: url("../img/toolbar_top.jpg");
-    background-size: cover;
 }
 
 
@@ -45,16 +30,7 @@ body {
     background-position: top;
 }
 
-.grid {
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../img/grid.png");
-    background-size: cover;
-    background-position: center;
-    z-index: -2;
-}
+
 
 /*.draggable {*/
     /*position: relative;*/
@@ -116,7 +92,7 @@ body {
 
 path {
     stroke-width: 4;
-    stroke: white;
+    stroke: #222;
     stroke-linecap: round;
     fill: none;
 }
