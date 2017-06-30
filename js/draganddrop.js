@@ -3,6 +3,8 @@
  */
 
 var width = $(document).width();
+var height = $(document).height();
+
 
 var mouseX,
     mouseY,
@@ -93,14 +95,18 @@ $(document).mousemove(function (event) {
 
 
     // Morph Elements when moving to Canvas
+    if (mouseY > 100) {
+        $(".ui-draggable-dragging.block").css({"width": "110", "height": "110"});
+        $(".ui-draggable-dragging.block > .settings").css({"opacity": "1", "width": "110", "height": "130", "margin": "90px auto 0"});
+    } else {
+        $(".ui-draggable-dragging.block").css({"width": "30", "height": "30"});
+        $(".ui-draggable-dragging.block > .settings").css({"opacity": "0", "width": "0", "height": "0", "margin": "20px auto 0"});
+    }
+
     if (mouseX > width / 100 * 12 && mouseX < width / 100 * 88) {
         $(".ui-draggable-dragging.element1").css({"width": "110", "height": "110"});
-        $(".ui-draggable-dragging.block_element").css({"width": "110", "height": "110"});
-        $(".ui-draggable-dragging.block_element > .settings").css({"opacity": "1", "width": "110", "height": "130", "margin": "90px auto 0"});
     } else {
         $(".ui-draggable-dragging.element1").css({"width": "40", "height": "40"});
-        $(".ui-draggable-dragging.block_element").css({"width": "40", "height": "40"});
-        $(".ui-draggable-dragging.block_element > .settings").css({"opacity": "0", "width": "0", "height": "0", "margin": "20px auto 0"});
     }
 
     // Disable draggable bei Dragpoints

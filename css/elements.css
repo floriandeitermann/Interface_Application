@@ -4,20 +4,78 @@
 .topbar {
     width: 100vw;
     height: 22px;
-    background-image: url("../img/menubar_ios.jpg");
+    background-image: url("../img/_blocks_top/menubar_ios.jpg");
     background-size: cover;
 }
-.browser {
-    width: 100vw;
-    height: 38px;
-    background-color: #dbdcdc ;
-}
+.browser {  width: 100vw;  height: 38px;  background-color: #dbdcdc ;  }
+.browser_dots {  height: 12px;  width: 52px;  }
+.browser_title {  position: relative;  font-family: "San Francisco Display";  margin: 0 auto;  }
+
 .blocks_bar {
+    position: relative;
     width: 100vw;
     height: 40px;
     background-color: #E6E6E6 ;
 }
+.top_left {
+    position: relative;
+    float: left;
+    width: 344px;
+}
+.top_right {
+    position: relative;
+    float: right;
+    width: 240px;
+}
+.blocks_container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
 
+    height: 100%;
+}
+
+
+/*----------- BLOKKS ---------------*/
+.block {
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 0 10px;
+    border-radius: 1px;
+    background-size: cover;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.speech {
+    background-image: url("../img/_blocks_top/Speech_Block.svg");
+}
+.gesture {
+    background-image: url("../img/_blocks_top/Gesture_Block.svg");
+}
+
+.settings {
+    width: 40px;
+    height: 60px;
+    margin: 20px auto 0;
+    background-image: url("../img/_blocks_top/settings.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: width 0.3s ease, height 0.3s ease;
+    opacity: 0;
+}
+
+.element1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #5299FF;
+    transition: width 0.3s ease, height 0.3s ease;
+}
 
 .dragpoint {
     transform: translate(50px, -5px);
@@ -28,12 +86,10 @@
     opacity: 0;
     transition: 0.3s all ease;
 }
-
 .dragpoint:hover {
     width: 15px;
     height: 15px;
 }
-
 .helper {
     width: 20px;
     height: 20px;
@@ -57,6 +113,7 @@
     position: relative;
     width: 184px;
     margin: 0 auto;
+    transform: translate(0px, 20px);
 }
 .filter {
     position: absolute;
@@ -64,25 +121,6 @@
     left: 36px;
 }
 
-.data_browser {
-    top: 82px;
-    left: 0;
-    height: calc(100vh - 82px);
-    width: 12vw;
-    border: 1px solid white;
-    z-index: -1;
-}
-
-.element1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 40px;
-    margin: 0 auto;
-    background-color: #5299FF;
-    transition: width 0.3s ease, height 0.3s ease;
-}
 
 /*----------- RIGHT ------------*/
 
@@ -96,8 +134,8 @@
 }
 .tools {
     position: relative;
-    width: 192px;
-    margin: 0 auto;
+    width: 224px;
+    transform: translate(0px, 20px);
 }
 
 .blocks_browser {
@@ -110,38 +148,7 @@
     border: 1px solid white;
 }
 
-.block {
-    background-color: #222;
-    width: 100%;
-    height: 100px;
-    border: 1px solid #444;
-}
 
-.block_element {
-    width: 40px;
-    height: 40px;
-    margin: 0 auto;
-    background-size: cover;
-    transition: width 0.3s ease, height 0.3s ease;
-}
-
-.speech {
-    background-image: url("../img/Speech_Block.svg");
-}
-.gesture {
-    background-image: url("../img/Gesture_Block.svg");
-}
-
-.settings {
-    width: 40px;
-    height: 60px;
-    margin: 20px auto 0;
-    background-image: url("../img/settings.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    transition: width 0.3s ease, height 0.3s ease;
-    opacity: 0;
-}
 
 /*----------- Settings ------------*/
 
@@ -149,11 +156,10 @@
 /*----------- Grid ------------*/
 .grid {
     position: fixed;
-    top: 0;
+    top: 20px;
     height: 100vh;
     width: 100vw;
     background-image: url("../img/grid.svg");
     background-size: cover;
-    background-position: center;
     z-index: -2;
 }
