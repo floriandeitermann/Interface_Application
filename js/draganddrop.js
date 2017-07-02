@@ -21,7 +21,7 @@ line.curve = svg.getElementById("curve");
 
 // init Drag & Drop
 $(function () {
-    $(".draggable").draggable({ grid: [ 8, 8 ] });
+    $(".draggable").draggable({ grid: [ 80, 80 ] });
 
     //erstellt beim Draggen eine transparente Kopie
     $(".draggable2").draggable({
@@ -116,6 +116,21 @@ $(document).mousemove(function (event) {
         $('.element1').draggable("enable")
     }
 
+});
+
+
+
+$(window).resize(function() {
+
+    width = $(document).width();
+    height = $(document).height();
+
+    $('svg').removeAttr('viewBox');
+    $('svg').removeAttr('width');
+    $('svg').removeAttr('height');
+    $('svg').each(function () { $(this)[0].setAttribute('viewBox', '0 0' + ' ' + width + ' ' + height) });
+    $('svg').each(function () { $(this)[0].setAttribute('width', width) });
+    $('svg').each(function () { $(this)[0].setAttribute('height', height) });
 });
 
 
