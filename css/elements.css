@@ -1,15 +1,14 @@
 
 
 /*----------- TOP ---------------*/
-.topbar {
-    width: 100vw;
-    height: 22px;
-    background-image: url("../img/_blocks_top/menubar_ios.jpg");
-    background-size: cover;
-}
+.macOS_bar {  width: 100vw;  height: 22px;  background-color: #222;  }
+.macOS_bar_left {  position: relative; top: 2px;  left: 12px;  float: left}
+.macOS_bar_right {  position: relative; top: 4px;  right: 12px;  float: right}
+
+
 .browser {  width: 100vw;  height: 38px;  background-color: #dbdcdc ;  }
-.browser_dots {  height: 12px;  width: 52px;  }
-.browser_title {  position: relative;  font-family: "San Francisco Display";  margin: 0 auto;  }
+.browser_dots {  position: relative; top: 12px;  left: 12px;}
+.browser_title {  position: absolute;  font-family: "San Francisco Display";  transform: translate(-50%, 0);  left: 50%;  }
 
 .blocks_bar {
     position: relative;
@@ -20,7 +19,7 @@
 .top_left {
     position: relative;
     float: left;
-    width: 344px;
+    width: 264px;
 }
 .top_right {
     position: relative;
@@ -38,38 +37,60 @@
 
 /*----------- BLOKKS ---------------*/
 .block {
-    top: 5px;
-    width: 30px;
-    height: 30px;
     float: left;
-    margin: 0 10px;
     border-radius: 1px;
     background-size: cover;
     transition: width 0.3s ease, height 0.3s ease;
 }
 
-.speech {
-    background-image: url("../img/_blocks_top/Speech_Block.svg");
+.speech_block {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    background: linear-gradient(to bottom right, #3224ae , #c56cd7);
+    transition: 0.3s all ease;
 }
-.gesture {
-    background-image: url("../img/_blocks_top/Gesture_Block.svg");
+.block_name {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    color: white;
+    font-family: "DIN Pro";
+    font-size: 10px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.block_speech_setting {
+    position: absolute;
+    bottom: 24px;
+    left: 16px;
+    color: white;
+    font-size: 10px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    display: none;
 }
 
-.settings {
-    width: 40px;
-    height: 60px;
-    margin: 20px auto 0;
-    background-image: url("../img/_blocks_top/settings.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
+.block_dropdown {
+    position: absolute;
+    right: 10px;
+    bottom: 16px;
+    display: none;
+}
+
+.states {
+    float: left;
+    margin: 0 auto;
     transition: width 0.3s ease, height 0.3s ease;
-    opacity: 0;
+    display: none;
 }
 
 .element1 {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 162px;
+    left: 42px;
     width: 40px;
     height: 40px;
     margin: 0 auto;
@@ -78,7 +99,10 @@
 }
 
 .dragpoint {
-    transform: translate(50px, -5px);
+    z-index: 2;
+    position: relative;
+    top: 32px;
+    left: -5px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -87,9 +111,9 @@
     transition: 0.3s all ease;
 }
 .dragpoint:hover {
-    width: 15px;
-    height: 15px;
+    transform: scale(1.4);
 }
+
 .helper {
     width: 20px;
     height: 20px;
@@ -111,7 +135,7 @@
 }
 .list {
     position: relative;
-    width: 184px;
+    width: 200px;
     margin: 0 auto;
     transform: translate(0px, 20px);
 }

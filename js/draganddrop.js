@@ -1,6 +1,5 @@
-/**
- * Created by Max on 12.06.17.
- */
+
+// VARIABLEN    --------------------------------------------------------------------------------
 
 var width = $(document).width();
 var height = $(document).height();
@@ -16,13 +15,51 @@ var d;
 
 var dPoint;
 
-
 line.curve = svg.getElementById("curve");
+
+// --------------------------------------------------------------------------------------------
+
+
+
+// Adjust SVG Canvas when document is ready
+$( document ).ready(function() {
+    width = $(document).width();
+    height = $(document).height();
+
+    $('svg').removeAttr('viewBox');
+    $('svg').removeAttr('width');
+    $('svg').removeAttr('height');
+    $('svg').each(function () { $(this)[0].setAttribute('viewBox', '0 0' + ' ' + width + ' ' + height) });
+    $('svg').each(function () { $(this)[0].setAttribute('width', width) });
+    $('svg').each(function () { $(this)[0].setAttribute('height', height) });
+});
+
+// Resize SVG Canvas when resizing window
+$(window).resize(function() {
+    width = $(document).width();
+    height = $(document).height();
+
+    $('svg').removeAttr('viewBox');
+    $('svg').removeAttr('width');
+    $('svg').removeAttr('height');
+    $('svg').each(function () { $(this)[0].setAttribute('viewBox', '0 0' + ' ' + width + ' ' + height) });
+    $('svg').each(function () { $(this)[0].setAttribute('width', width) });
+    $('svg').each(function () { $(this)[0].setAttribute('height', height) });
+});
+
+
+
+
+
+
+
 
 // init Drag & Drop
 $(function () {
-    $(".draggable").draggable({ grid: [ 80, 80 ] });
+    $(".draggable").draggable({ grid: [ 8, 8 ] });
 
+    $( "#speed" ).selectmenu();
+    
     //erstellt beim Draggen eine transparente Kopie
     $(".draggable2").draggable({
         cursor: "move",
@@ -70,7 +107,7 @@ $(document).mousemove(function (event) {
 
         d =
             "M" + (point[dPoint].left + 5) + "," + (point[dPoint].top + 5) + " C" +
-            (point[dPoint].left + 20) + "," + (point[dPoint].top - 100) + " " +
+            (point[dPoint].left - 100) + "," + (point[dPoint].top - 10) + " " +
             (mouseX - 50) + "," + (mouseY + 10) +' '+ (mouseX) + "," + (mouseY);
         line.curve.setAttributeNS(null, "d", d);
 
@@ -96,15 +133,19 @@ $(document).mousemove(function (event) {
 
     // Morph Elements when moving to Canvas
     if (mouseY > 100) {
-        $(".ui-draggable-dragging.block").css({"width": "110", "height": "110"});
-        $(".ui-draggable-dragging.block > .settings").css({"opacity": "1", "width": "110", "height": "130", "margin": "90px auto 0"});
+        $(".ui-draggable-dragging > .speech_block").css({"width": "159", "height": "159", "border-radius": "2px"});
+        $(".ui-draggable-dragging.block > .states").css({"display": "block"});
+        $(".ui-draggable-dragging > .speech_block > .block_dropdown").css({"display": "block"});
+        $(".ui-draggable-dragging > .speech_block > .block_speech_setting").css({"display": "block"});
     } else {
-        $(".ui-draggable-dragging.block").css({"width": "30", "height": "30"});
-        $(".ui-draggable-dragging.block > .settings").css({"opacity": "0", "width": "0", "height": "0", "margin": "20px auto 0"});
+        $(".ui-draggable-dragging > .speech_block").css({"width": "100", "height": "30", "border-radius": "50px"});
+        $(".ui-draggable-dragging.block > .states").css({"display": "none"});
+        $(".ui-draggable-dragging > .speech_block > .block_dropdown").css({"display": "none"});
+        $(".ui-draggable-dragging > .speech_block > .block_speech_setting").css({"display": "none"});
     }
 
     if (mouseX > width / 100 * 12 && mouseX < width / 100 * 88) {
-        $(".ui-draggable-dragging.element1").css({"width": "110", "height": "110"});
+        $(".ui-draggable-dragging.element1").css({"width": "78", "height": "78"});
     } else {
         $(".ui-draggable-dragging.element1").css({"width": "40", "height": "40"});
     }
@@ -119,19 +160,6 @@ $(document).mousemove(function (event) {
 });
 
 
-
-$(window).resize(function() {
-
-    width = $(document).width();
-    height = $(document).height();
-
-    $('svg').removeAttr('viewBox');
-    $('svg').removeAttr('width');
-    $('svg').removeAttr('height');
-    $('svg').each(function () { $(this)[0].setAttribute('viewBox', '0 0' + ' ' + width + ' ' + height) });
-    $('svg').each(function () { $(this)[0].setAttribute('width', width) });
-    $('svg').each(function () { $(this)[0].setAttribute('height', height) });
-});
 
 
 

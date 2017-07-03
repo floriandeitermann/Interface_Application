@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ee582c-1074-4090-9ddb-c45a437effde" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/_blocks_top/settings.svg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/_blocks_top/top_left.png" afterPath="$PROJECT_DIR$/img/_blocks_top/top_left.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/_data_left/list.png" afterPath="$PROJECT_DIR$/img/_data_left/list.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/_tools_right/tools.png" afterPath="$PROJECT_DIR$/img/_tools_right/tools.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/elements.css" afterPath="$PROJECT_DIR$/css/elements.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/draganddrop.js" afterPath="$PROJECT_DIR$/js/draganddrop.js" />
     </list>
     <ignored path="Application.iws" />
@@ -23,14 +30,14 @@
     <favorites_list name="Application" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.39212006">
+    <splitter split-orientation="horizontal" split-proportion="0.29027778">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+                <state relative-caret-position="291">
+                  <caret line="51" column="47" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="47" />
                   <folding />
                 </state>
               </provider>
@@ -40,36 +47,26 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="code.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/code.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#3249#3272#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="draganddrop.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/draganddrop.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="938">
-                  <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+                <state relative-caret-position="210">
+                  <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
                   <folding>
-                    <element signature="e#3289#3340#0" expanded="false" />
-                    <element signature="e#3346#3396#0" expanded="false" />
+                    <element signature="e#472#910#0" expanded="false" />
+                    <element signature="e#984#1422#0" expanded="false" />
+                    <element signature="e#4874#4925#0" expanded="false" />
+                    <element signature="e#4931#4981#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/style.css">
+          <file leaf-file-name="jquery-ui.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/jquery-ui.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-944">
-                  <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+                <state relative-caret-position="-8145">
+                  <caret line="253" column="21" selection-start-line="253" selection-start-column="21" selection-end-line="253" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -78,8 +75,8 @@
           <file leaf-file-name="elements.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/elements.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1154">
-                  <caret line="163" column="28" selection-start-line="163" selection-start-column="28" selection-end-line="163" selection-end-column="28" />
+                <state relative-caret-position="315">
+                  <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
@@ -109,8 +106,9 @@
         <option value="$PROJECT_DIR$/extern_code/speech/css/style.css" />
         <option value="$PROJECT_DIR$/extern_code/gesture/gesture.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/css/elements.css" />
+        <option value="$PROJECT_DIR$/css/jquery-ui.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/elements.css" />
         <option value="$PROJECT_DIR$/js/draganddrop.js" />
       </list>
     </option>
@@ -121,10 +119,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="961" />
-    <option name="y" value="22" />
-    <option name="width" value="1599" />
-    <option name="height" value="1380" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -159,6 +155,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -247,15 +244,17 @@
       <workItem from="1498810030388" duration="11272000" />
       <workItem from="1498999635924" duration="460000" />
       <workItem from="1499002208257" duration="16000" />
-      <workItem from="1499035615228" duration="1987000" />
+      <workItem from="1499035615228" duration="2057000" />
+      <workItem from="1499081749863" duration="58000" />
+      <workItem from="1499081809172" duration="11392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56222000" />
+    <option name="totallyTimeSpent" value="67742000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="961" y="22" width="1599" height="1380" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -295,7 +294,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/draganddrop.js</url>
-          <line>38</line>
+          <line>75</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -305,8 +304,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="240">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -323,148 +322,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/draganddrop.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
-          <caret line="97" column="17" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
-          <folding>
-            <element signature="e#3289#3340#0" expanded="false" />
-            <element signature="e#3346#3396#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="75" column="18" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/elements.css">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="60" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/code.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding>
-            <element signature="e#3249#3272#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/draganddrop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="102" column="47" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
-          <folding>
-            <element signature="e#3289#3340#0" expanded="false" />
-            <element signature="e#3346#3396#0" expanded="false" />
+            <element signature="e#472#910#0" expanded="false" />
+            <element signature="e#984#1422#0" expanded="false" />
+            <element signature="e#4874#4925#0" expanded="false" />
+            <element signature="e#4931#4981#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/elements.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/code.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="e#3249#3272#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/draganddrop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-          <folding>
-            <element signature="e#3289#3340#0" expanded="false" />
-            <element signature="e#3346#3396#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/elements.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="29" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extern_code/gesture/gesture.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extern_code/gesture/js/code.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/code.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="e#3249#3272#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-944">
+        <state relative-caret-position="210">
           <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding />
         </state>
@@ -472,28 +343,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/elements.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1154">
+        <state relative-caret-position="2445">
           <caret line="163" column="28" selection-start-line="163" selection-start-column="28" selection-end-line="163" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/draganddrop.js">
+    <entry file="file://$PROJECT_DIR$/lib/jquery-ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="938">
-          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+        <state relative-caret-position="140">
+          <caret line="12782" column="34" selection-start-line="12782" selection-start-column="34" selection-end-line="12782" selection-end-column="34" />
           <folding>
-            <element signature="e#3289#3340#0" expanded="false" />
-            <element signature="e#3346#3396#0" expanded="false" />
+            <marker date="1497350512000" expanded="true" signature="22659:22730" placeholder="..." />
+            <marker date="1497350512000" expanded="true" signature="22753:22777" placeholder="..." />
+            <marker date="1497350512000" expanded="true" signature="105400:105417" placeholder="..." />
+            <marker date="1497350512000" expanded="true" signature="120032:120048" placeholder="..." />
+            <marker date="1497350512000" expanded="true" signature="277506:277550" placeholder="..." />
+            <marker date="1497350512000" expanded="true" signature="327079:327428" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/text.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1179">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/code.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="e#3249#3272#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="291">
+          <caret line="51" column="47" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/elements.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jquery-ui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8145">
+          <caret line="253" column="21" selection-start-line="253" selection-start-column="21" selection-end-line="253" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/draganddrop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#472#910#0" expanded="false" />
+            <element signature="e#984#1422#0" expanded="false" />
+            <element signature="e#4874#4925#0" expanded="false" />
+            <element signature="e#4931#4981#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -17,18 +17,7 @@ body {
     overflow-x: hidden;
     position: relative;
     box-sizing: border-box;
-}
-
-
-.speechblock {
-    position: fixed;
-    top: 172px;
-    right: 401px;
-    width: 11vw;
-    height: 32vh;
-    background-image: url("../img/speechblock.png");
-    background-size: cover;
-    background-position: top;
+    font-family: "San Francisco Text";
 }
 
 
@@ -92,8 +81,8 @@ body {
 }
 
 path {
-    stroke-width: 4;
-    stroke: #222;
+    stroke-width: 3;
+    stroke: #333;
     stroke-linecap: round;
     fill: none;
 }
