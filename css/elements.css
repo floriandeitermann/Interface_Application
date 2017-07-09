@@ -1,14 +1,15 @@
 
 
 /*----------- TOP ---------------*/
-.macOS_bar {  width: 100vw;  height: 22px;  background-color: #222;  }
-.macOS_bar_left {  position: relative; top: 2px;  left: 12px;  float: left}
-.macOS_bar_right {  position: relative; top: 4px;  right: 12px;  float: right}
+.browser {
+    width: 100vw;
+    height: 38px;
+    background-color: #dbdcdc ;
+    position: relative;
+    -webkit-app-region: drag;
+}
 
-
-.browser {  width: 100vw;  height: 38px;  background-color: #dbdcdc ;  }
-.browser_dots {  position: relative; top: 12px;  left: 12px;}
-.browser_title {  position: absolute;  font-family: "San Francisco Display";  transform: translate(-50%, 0);  left: 50%;  }
+.browser_title {  position: absolute;  font-family: "San Francisco Display"; font-size: 12px; color: #333 ; transform: translate(-50%, -50%);  left: 50%; top: 50%; }
 
 .blocks_bar {
     position: relative;
@@ -36,22 +37,27 @@
 
 
 /*----------- BLOKKS ---------------*/
-.block {
+.block_element {
     float: left;
     border-radius: 1px;
     background-size: cover;
     transition: width 0.3s ease, height 0.3s ease;
 }
-
-.speech_block {
+.block {
     position: relative;
     float: left;
     width: 100px;
     height: 30px;
     border-radius: 50px;
-    background: linear-gradient(to bottom right, #3224ae , #c56cd7);
     transition: 0.3s all ease;
 }
+.speech_block {
+    background: linear-gradient(to bottom right, #3224ae , #c56cd7);
+}
+.gesture_block {
+    background: linear-gradient(to bottom right, #8DF4CB , #5DD5C2);
+}
+
 .block_name {
     position: absolute;
     top: 16px;
@@ -81,7 +87,6 @@
 }
 
 .states {
-    float: left;
     margin: 0 auto;
     transition: width 0.3s ease, height 0.3s ease;
     display: none;
@@ -98,7 +103,7 @@
     transition: width 0.3s ease, height 0.3s ease;
 }
 
-.dragpoint {
+.dragpoint_blocks {
     z-index: 2;
     position: relative;
     top: 32px;
@@ -107,10 +112,25 @@
     height: 10px;
     border-radius: 50%;
     background-color: #ddd;
-    opacity: 0;
+    opacity: 1;
     transition: 0.3s all ease;
 }
-.dragpoint:hover {
+.dragpoint_blocks:hover {
+    transform: scale(1.4);
+}
+.dragpoint_ui {
+    z-index: 2;
+    position: relative;
+    top: 32px;
+    right: -73px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    opacity: 1;
+    transition: 0.3s all ease;
+}
+.dragpoint_ui:hover {
     transform: scale(1.4);
 }
 
@@ -128,8 +148,8 @@
 .side_menu_left {
     position: absolute;
     left: 0;
-    top: 100px;
-    height: calc(100vh - 100px);
+    top: 78px;
+    height: calc(100vh - 78px);
     width: 200px;
     background-color: #F0F0F0;
 }
@@ -151,8 +171,8 @@
 .side_menu_right {
     position: absolute;
     right: 0;
-    top: 100px;
-    height: calc(100vh - 100px);
+    top: 78px;
+    height: calc(100vh - 78px);
     width: 224px;
     background-color: #F0F0F0;
 }

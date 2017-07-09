@@ -1,0 +1,13 @@
+{
+  "name": "Interface",
+  "version": "1.0.0",
+  "main": "window.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.6.11",
+    "serialport": "^4.0.7"
+  }
+}

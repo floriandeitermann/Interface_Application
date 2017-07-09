@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <title>Prototyping Interactions</title>
 
+    <script>
+        // to use jQuery and others, window.module should not exist
+        // this renames it to window.nodeModule
+        window.nodeModule = window.module;
+        delete window.module;
+    </script>
+
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="css/text.css">
     <link rel="stylesheet" href="css/style.css">
@@ -19,19 +26,13 @@
     <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1698 900" width="1698" height="900"
          preserveAspectRatio="xMidYMid meet">
         <g id="main">
-            <path id="curve" d="M100,250 C100,100 400,100 400,250"/>
+            <path id="curve" d="M0,0 C0,0 0,0 0,0"/>
         </g>
     </svg>
 </div>
 
 <!-------------------TOP------------------->
-<div class="macOS_bar">
-    <div class="macOS_bar_left"><img src="img/_blocks_top/ios_bar_left.png" alt="" width="369px"></div>
-    <div class="macOS_bar_right"><img src="img/_blocks_top/ios_bar_right.png" alt="" width="167px"></div>
-</div>
-
 <div class="browser">
-    <div class="browser_dots"><img src="img/_blocks_top/dots.png" alt="" width="52px"></div>
     <div class="browser_title">Blokks.io</div>
 </div>
 
@@ -40,15 +41,11 @@
 
     <div class="blocks_container">
 
-        <div class="block draggable">
-
-            <div id="d0" class="dragpoint draggable2"></div>
-
-            <div class="speech_block">
+        <div class="block_element draggable">
+            <div id="d0" class="dragpoint dragpoint_blocks draggable2"></div>
+            <div class="block speech_block">
                 <div class="block_name">SPEECH</div>
-
                 <div class="block_speech_setting">TYPE:</div>
-
                 <fieldset class="block_dropdown">
                     <select name="speed" id="speed">
                         <option selected="selected">Contained</option>
@@ -56,22 +53,41 @@
                     </select>
                 </fieldset>
             </div>
-
             <div class="states">
-                <img src="img/_blocks_top/states.png" alt="" height="160">
+                <img src="img/_blocks_top/states.png" alt="" width="159px">
             </div>
+        </div>
+
+        <div class="block_element draggable">
+            <div id="d1" class="dragpoint dragpoint_blocks draggable2"></div>
+            <div class="block gesture_block">
+                <div class="block_name">GESTURE</div>
+                <div class="block_speech_setting">TYPE:</div>
+                <fieldset class="block_dropdown">
+                    <select name="speed" id="speed">
+                        <option selected="selected">Contained</option>
+                        <option>Slide</option>
+                    </select>
+                </fieldset>
+            </div>
+            <!--<div class="states">-->
+                <!--<img src="img/_blocks_top/states.png" alt="" width="159px">-->
+            <!--</div>-->
         </div>
 
     </div>
 
     <div class="top_right">
-        <a href="extern_code/speech/speech.html"
-           onclick="window.open('extern_code/speech/speech.html', 'newwindow', 'width=600,height=400'); return false;">
-            <img src="img/_blocks_top/top_right.png" alt="" width="240">
-        </a>
+        <img src="img/_blocks_top/top_right.png" alt="" width="240">
     </div>
 
 </div>
+
+
+<!--<a href="extern_code/speech/speech.html"-->
+<!--onclick="window.open('extern_code/speech/speech.html', 'newwindow', 'width=600,height=400'); return false;">-->
+<!--</a>-->
+
 
 
 <!-------------------LEFT------------------->
@@ -81,7 +97,7 @@
     <div class="filter"><img src="img/_data_left/filter.png" alt="" width="128px"></div>
 
     <div class="element1 draggable">
-        <div id="d2" class="dragpoint draggable2"></div>
+        <div id="d2" class="dragpoint dragpoint_ui draggable2"></div>
     </div>
 
 </div>
@@ -100,6 +116,7 @@
 <script src="lib/jquery-ui.js"></script>
 
 <script type="text/javascript" src="js/draganddrop.js"></script>
+
 
 
 </body>

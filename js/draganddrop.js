@@ -10,10 +10,15 @@ var mouseX,
     line = {};
     point = [];
 
-// Curve
+// Curve Draw
 var d;
 
+var savedCurveP1, savedCurveP2;
+
 var dPoint;
+
+var downPoint, upPoint;
+
 
 line.curve = svg.getElementById("curve");
 
@@ -32,6 +37,8 @@ $( document ).ready(function() {
     $('svg').each(function () { $(this)[0].setAttribute('viewBox', '0 0' + ' ' + width + ' ' + height) });
     $('svg').each(function () { $(this)[0].setAttribute('width', width) });
     $('svg').each(function () { $(this)[0].setAttribute('height', height) });
+
+    toggle();
 });
 
 // Resize SVG Canvas when resizing window
@@ -46,8 +53,6 @@ $(window).resize(function() {
     $('svg').each(function () { $(this)[0].setAttribute('width', width) });
     $('svg').each(function () { $(this)[0].setAttribute('height', height) });
 });
-
-
 
 
 
@@ -72,22 +77,45 @@ $(function () {
 });
 
 
+$(".dragpoint").mousedown(function() {
+    downPoint = $(this).attr('id').slice(1,2);
+    console.log("down_" + downPoint);
+});
+
+$(".dragpoint").mouseup(function() {
+    upPoint = $(this).attr('id').slice(1,2);
+    console.log("up_" + upPoint);
+
+    if (upPoint != downPoint) {
+
+        savedCurveP1 = $("#d" + downPoint);
+        savedCurveP2 = $("#d" + upPoint);
+
+        console.log(savedCurveP1.offset().top);
+    }
+});
+
+
+
+// curveDraw(savedCurveP1[0].offset().left, savedCurveP1[0].offset().top, savedCurveP2[0].offset().left, savedCurveP2[0].offset().top);
+
 $(document).mousemove(function (event) {
     mouseX = event.pageX;
     mouseY = event.pageY;
-
-
+    if(savedCurveP1 != undefined){
+        curveDraw(savedCurveP1.offset().left, savedCurveP1.offset().top, savedCurveP2.offset().left, savedCurveP2.offset().top);
+    }
     // Speichert die gedraggten Elemente in point[i] ab
     $('.dragpoint').each(function(i) {
 
         if ($(this).parent().hasClass("ui-draggable-dragging")) {
 
-            // Blendet die Dragpoints ein und aus
-            if (mouseX > width / 100 * 12 && mouseX < width / 100 * 88) {
-                $("#d"+i).css({"opacity": "1"});
-            } else {
-                $("#d"+i).css({"opacity": "0"});
-            }
+            // // Blendet die Dragpoints ein und aus
+            // if (mouseX > width / 100 * 12 && mouseX < width / 100 * 88) {
+            //     $("#d"+i).css({"opacity": "1"});
+            // } else {
+            //     $("#d"+i).css({"opacity": "0"});
+            // }
         }
         point[i] = $(this).offset();
     });
@@ -97,7 +125,8 @@ $(document).mousemove(function (event) {
     $(".helper").mousemove(function() {
 
         $("#curve").css({"opacity": "1"});
-
+        savedCurveP1 = undefined;
+        savedCurveP2 = undefined;
         // console.log($(this).offset().left);
 
         $(".dragpoint").mouseover(function() {
@@ -105,23 +134,26 @@ $(document).mousemove(function (event) {
             dPoint = $(this).attr('id').slice(1,2);
         });
 
-        d =
-            "M" + (point[dPoint].left + 5) + "," + (point[dPoint].top + 5) + " C" +
-            (point[dPoint].left - 100) + "," + (point[dPoint].top - 10) + " " +
-            (mouseX - 50) + "," + (mouseY + 10) +' '+ (mouseX) + "," + (mouseY);
-        line.curve.setAttributeNS(null, "d", d);
+
+        curveDraw(point[dPoint].left, point[dPoint].top, mouseX, mouseY);
+
+        // d =
+        //     "M" + (point[dPoint].left + 5) + "," + (point[dPoint].top + 5) + " C" +
+        //     (point[dPoint].left - 100) + "," + (point[dPoint].top - 10) + " " +
+        //     (mouseX + 100) + "," + (mouseY + 10) +' '+ (mouseX) + "," + (mouseY);
+        // line.curve.setAttributeNS(null, "d", d);
 
         $(".helper").mouseup(function() {
             $("#curve").css({"opacity": "0"});
         });
 
+
     });
 
 
-    // d =
-    //     "M" + Math.round(point[0].left + 10) + "," + (point[0].top + 10) + " C" + (point[0].left + 50) + "," + point[0].top + " " +
-    //     (point[1].left - 50) + "," + (point[1].top + 50) +' '+ (point[1].left + 10) + "," + (point[1].top + 10);
-    // line.curve.setAttributeNS(null, "d", d);
+
+
+
 
     //
     // $(".draggable").mousemove(function (event) {
@@ -134,14 +166,21 @@ $(document).mousemove(function (event) {
     // Morph Elements when moving to Canvas
     if (mouseY > 100) {
         $(".ui-draggable-dragging > .speech_block").css({"width": "159", "height": "159", "border-radius": "2px"});
-        $(".ui-draggable-dragging.block > .states").css({"display": "block"});
+        $(".ui-draggable-dragging > .gesture_block").css({"width": "159", "height": "159", "border-radius": "2px"});
+        $(".ui-draggable-dragging.block_element > .states").css({"display": "block"});
         $(".ui-draggable-dragging > .speech_block > .block_dropdown").css({"display": "block"});
+        $(".ui-draggable-dragging > .gesture_block > .block_dropdown").css({"display": "block"});
         $(".ui-draggable-dragging > .speech_block > .block_speech_setting").css({"display": "block"});
+        $(".ui-draggable-dragging > .gesture_block > .block_speech_setting").css({"display": "block"});
+
     } else {
-        $(".ui-draggable-dragging > .speech_block").css({"width": "100", "height": "30", "border-radius": "50px"});
-        $(".ui-draggable-dragging.block > .states").css({"display": "none"});
+        $(".ui-draggable-dragging > .speech_block").css({"width": "100", "height": "30", "border-radius": "2px"});
+        $(".ui-draggable-dragging > .gesture_block").css({"width": "100", "height": "30", "border-radius": "2px"});
+        $(".ui-draggable-dragging.block_element > .states").css({"display": "none"});
         $(".ui-draggable-dragging > .speech_block > .block_dropdown").css({"display": "none"});
+        $(".ui-draggable-dragging > .gesture_block > .block_dropdown").css({"display": "none"});
         $(".ui-draggable-dragging > .speech_block > .block_speech_setting").css({"display": "none"});
+        $(".ui-draggable-dragging > .gesture_block > .block_speech_setting").css({"display": "none"});
     }
 
     if (mouseX > width / 100 * 12 && mouseX < width / 100 * 88) {
@@ -158,6 +197,57 @@ $(document).mousemove(function (event) {
     }
 
 });
+
+
+// Functions ------------------------------------------------------------
+
+function curveDraw (p1X,p1Y,p2X,p2Y) {
+
+    d =
+        "M" + (p1X + 5) + "," + (p1Y + 5) + " C" +
+        (p1X - 100) + "," + (p1Y - 10) + " " +
+        (p2X + 100) + "," + (p2Y + 10) +' '+ (p2X) + "," + (p2Y);
+
+    line.curve.setAttributeNS(null, "d", d);
+}
+
+
+
+// Electorn --------------------------------------------------------------
+
+
+const {remote, ipcRenderer} = require('electron');
+
+
+
+
+
+function toggle(){
+
+    $(".top_right").click(function(){
+
+        ipcRenderer.send('toggleSmall');
+
+    })
+
+    $(".side_menu_right").click(function(){
+
+        ipcRenderer.send('toggleGesture');
+
+    })
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

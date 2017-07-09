@@ -712,7 +712,7 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-selectmenu-text {
 	display: block;
-	margin-right: 20px;
+	margin-right: 5px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
