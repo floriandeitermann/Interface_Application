@@ -188,7 +188,8 @@ $(document).mousemove(function (event) {
 
     if (mouseX > width / 100 * 12 && mouseX < width / 100 * 88) {
         $(".ui-draggable-dragging > .block_list").css({"width": "159", "height": "159"});
-        $(".ui-draggable-dragging > .block_list  > .block_name").css({"top": "16px", "left": "16px", "transform": "translate(0%, -00%)"});
+        $(".ui-draggable-dragging > .list_block").css({"background-color": "rgba(60, 60, 60, 1.0 )"});
+        $(".ui-draggable-dragging > .block_list  > .block_name_list").css({"top": "16px", "left": "16px", "transform": "translate(0%, -00%)", "opacity": "1" });
         $(".ui-draggable-dragging > .block_list  > .block_toggle").css({"display": "block"});
         $(".ui-draggable-dragging > .block_list  > .list_dropdown").css({"display": "block"});
         $(".ui-draggable-dragging > .block_list  > .list_speech_setting").css({"display": "block"});
@@ -198,7 +199,8 @@ $(document).mousemove(function (event) {
 
     } else {
         $(".ui-draggable-dragging > .block_list").css({"width": "74", "height": "26"});
-        $(".ui-draggable-dragging > .block_list  > .block_name").css({"top": "50%", "left": "50%", "transform": "translate(-50%, -50%)"});
+        $(".ui-draggable-dragging > .list_block").css({"background-color": "rgba(20, 20, 20, 0.0 )"});
+        $(".ui-draggable-dragging > .block_list  > .block_name_list").css({"top": "50%", "left": "50%", "transform": "translate(-50%, -50%)", "opacity": "0" });
         $(".ui-draggable-dragging > .block_list  > .block_toggle").css({"display": "none"});
         $(".ui-draggable-dragging > .block_list  > .list_dropdown").css({"display": "none"});
         $(".ui-draggable-dragging > .block_list  > .list_speech_setting").css({"display": "none"});
@@ -274,13 +276,13 @@ const {remote, ipcRenderer} = require('electron');
 
 function toggle(){
 
-    $(".top_right").click(function(){
+    $("#run_rotate").click(function(){
 
         ipcRenderer.send('toggleSmall');
 
     })
 
-    $(".side_menu_right").click(function(){
+    $("#run_gesture").click(function(){
 
         ipcRenderer.send('toggleGesture');
 

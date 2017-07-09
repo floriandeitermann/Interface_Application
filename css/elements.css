@@ -33,6 +33,26 @@
     transform: translate(-50%, 0%);
     height: 100%;
 }
+.run_button {
+    position: relative;
+    margin-right: 10px;
+    float: right;
+    z-index: 10;
+    width: 90px;
+    height: 100%;
+}
+.run_button_pos {
+    position: absolute;
+    top: 8px;
+    right: 6px;
+}
+
+.run {
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 40px;
+}
 
 
 /*----------- BLOKKS ---------------*/
@@ -60,7 +80,7 @@
     background: linear-gradient(to bottom right, #f4ac5f, #d5532f);
 }
 .list_block {
-    background-color: #157da4;
+    background-color: rgba(0, 0, 0, 0.0 );
 }
 
 .block_name {
@@ -74,6 +94,20 @@
     font-weight: 200;
     letter-spacing: 1px;
 }
+
+.block_name_list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "DIN Pro";
+    font-size: 10px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    opacity: 0;
+}
+
 .block_toggle {
     position: absolute;
     top: 50%;
@@ -96,6 +130,12 @@
     font-weight: 200;
     letter-spacing: 1px;
     display: none;
+}
+
+.pos_list {
+    position: absolute;
+    top: 584px;
+    left: 34px;
 }
 
 .list_active_passive {
