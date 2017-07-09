@@ -20,9 +20,6 @@ var dPoint;
 var downPoint, upPoint;
 
 
-var settingToggle = true;
-
-
 line.curve = svg.getElementById("curve");
 
 // --------------------------------------------------------------------------------------------
@@ -64,10 +61,10 @@ $(window).resize(function() {
 
 // init Drag & Drop
 $(function () {
-    $(".draggable").draggable({ grid: [ 1, 1 ] });
+    $(".draggable").draggable({ grid: [ 8, 8 ] });
 
     $( "#speed" ).selectmenu();
-
+    
     //erstellt beim Draggen eine transparente Kopie
     $(".draggable2").draggable({
         cursor: "move",
@@ -168,17 +165,15 @@ $(document).mousemove(function (event) {
 
     // Morph Elements when moving to Canvas
     if (mouseY > 100) {
-        $(".ui-draggable-dragging > .block").css({"width": "159", "height": "40", "border-radius": "3px"});
-        $(".ui-draggable-dragging > .block  > .block_name").css({"top": "50%", "left": "16px", "transform": "translate(0%, -50%)"});
-        $(".ui-draggable-dragging > .block  > .block_toggle").css({"display": "block"});
+        $(".ui-draggable-dragging > .block").css({"width": "159", "height": "74", "border-radius": "3px"});
+        $(".ui-draggable-dragging > .block  > .block_name").css({"top": "16px", "left": "16px", "transform": "translate(0%, 0%)"});
+        // $(".ui-draggable-dragging.block_element > .states").css({"display": "block"});
+        // $(".ui-draggable-dragging > .block > .block_dropdown").css({"display": "block"});
+        // $(".ui-draggable-dragging > .block > .block_speech_setting").css({"display": "block"});
 
     } else {
         $(".ui-draggable-dragging > .block").css({"width": "74", "height": "26", "border-radius": "3px"});
         $(".ui-draggable-dragging > .block  > .block_name").css({"top": "50%", "left": "50%", "transform": "translate(-50%, -50%)"});
-        $(".ui-draggable-dragging > .block  > .block_toggle").css({"display": "none"});
-
-
-
         $(".ui-draggable-dragging.block_element > .states").css({"display": "none"});
         $(".ui-draggable-dragging > .block > .block_dropdown").css({"display": "none"});
         $(".ui-draggable-dragging > .block > .block_speech_setting").css({"display": "none"});
@@ -200,11 +195,6 @@ $(document).mousemove(function (event) {
 });
 
 
-$(".block_toggle").click(function() {
-    toggleSettings();
-});
-
-
 // Functions ------------------------------------------------------------
 
 function curveDraw (p1X,p1Y,p2X,p2Y) {
@@ -215,33 +205,6 @@ function curveDraw (p1X,p1Y,p2X,p2Y) {
         (p2X + 100) + "," + (p2Y + 10) +' '+ (p2X) + "," + (p2Y);
 
     line.curve.setAttributeNS(null, "d", d);
-}
-
-function toggleSettings () {
-    if (settingToggle == true) {
-
-        $(".gesture_block").css({"width": "159", "height": "159"});
-        $(".gesture_block > .block_name").css({"top": "16px", "left": "16px", "transform": "translate(0%, 0%)"});
-        $(".gesture_block > .block_toggle").css({"top": "16px", "right": "16px", "transform": "translate(0%, 0%)"});
-
-        $(".states").css({"display": "block"});
-        $(".block_dropdown").css({"display": "block"});
-        $(".block_speech_setting").css({"display": "block"});
-
-        settingToggle = false;
-
-    } else {
-
-        $(".gesture_block").css({"width": "159", "height": "40"});
-        $(".gesture_block > .block_name").css({"top": "50%", "left": "16px", "transform": "translate(0%, -50%)"});
-        $(".gesture_block > .block_toggle").css({"top": "50%", "right": "16px", "transform": "translate(0%, -50%)"});
-
-        $(".states").css({"display": "none"});
-        $(".block_dropdown").css({"display": "none"});
-        $(".block_speech_setting").css({"display": "none"});
-
-        settingToggle = true;
-    }
 }
 
 
