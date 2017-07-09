@@ -168,11 +168,13 @@ $(document).mousemove(function (event) {
 
     // Morph Elements when moving to Canvas
     if (mouseY > 100) {
+        $(".ui-draggable-dragging > .dragpoint_blocks").css({"display": "block"});
         $(".ui-draggable-dragging > .block").css({"width": "159", "height": "40", "border-radius": "3px"});
         $(".ui-draggable-dragging > .block  > .block_name").css({"top": "50%", "left": "16px", "transform": "translate(0%, -50%)"});
         $(".ui-draggable-dragging > .block  > .block_toggle").css({"display": "block"});
 
     } else {
+        $(".ui-draggable-dragging > .dragpoint_blocks").css({"display": "none"});
         $(".ui-draggable-dragging > .block").css({"width": "74", "height": "26", "border-radius": "3px"});
         $(".ui-draggable-dragging > .block  > .block_name").css({"top": "50%", "left": "50%", "transform": "translate(-50%, -50%)"});
         $(".ui-draggable-dragging > .block  > .block_toggle").css({"display": "none"});
@@ -185,9 +187,24 @@ $(document).mousemove(function (event) {
     }
 
     if (mouseX > width / 100 * 12 && mouseX < width / 100 * 88) {
-        $(".ui-draggable-dragging.element1").css({"width": "78", "height": "78"});
+        $(".ui-draggable-dragging > .block_list").css({"width": "159", "height": "159"});
+        $(".ui-draggable-dragging > .block_list  > .block_name").css({"top": "16px", "left": "16px", "transform": "translate(0%, -00%)"});
+        $(".ui-draggable-dragging > .block_list  > .block_toggle").css({"display": "block"});
+        $(".ui-draggable-dragging > .block_list  > .list_dropdown").css({"display": "block"});
+        $(".ui-draggable-dragging > .block_list  > .list_speech_setting").css({"display": "block"});
+        $(".ui-draggable-dragging > .list_elements").css({"display": "block"});
+        $(".ui-draggable-dragging > .block_list > .list_active_passive").css({"display": "block"});
+
+
     } else {
-        $(".ui-draggable-dragging.element1").css({"width": "40", "height": "40"});
+        $(".ui-draggable-dragging > .block_list").css({"width": "74", "height": "26"});
+        $(".ui-draggable-dragging > .block_list  > .block_name").css({"top": "50%", "left": "50%", "transform": "translate(-50%, -50%)"});
+        $(".ui-draggable-dragging > .block_list  > .block_toggle").css({"display": "none"});
+        $(".ui-draggable-dragging > .block_list  > .list_dropdown").css({"display": "none"});
+        $(".ui-draggable-dragging > .block_list  > .list_speech_setting").css({"display": "none"});
+        $(".ui-draggable-dragging > .list_elements").css({"display": "none"});
+        $(".ui-draggable-dragging > .block_list > .list_active_passive").css({"display": "none"});
+
     }
 
     // Disable draggable bei Dragpoints
@@ -246,7 +263,7 @@ function toggleSettings () {
 
 
 
-// Electorn --------------------------------------------------------------
+// Electron --------------------------------------------------------------
 
 
 const {remote, ipcRenderer} = require('electron');

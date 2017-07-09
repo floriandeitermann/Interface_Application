@@ -31,7 +31,6 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
-
     height: 100%;
 }
 
@@ -40,12 +39,12 @@
 .block_element {
     float: left;
     border-radius: 1px;
+    margin:7px 20px 0 0;
     background-size: cover;
     transition: width 0.3s ease, height 0.3s ease;
 }
 .block {
     position: relative;
-    float: left;
     width: 74px;
     height: 26px;
     border-radius: 3px;
@@ -56,6 +55,12 @@
 }
 .gesture_block {
     background: linear-gradient(to bottom right, #8DF4CB , #5DD5C2);
+}
+.rotate_block {
+    background: linear-gradient(to bottom right, #f4ac5f, #d5532f);
+}
+.list_block {
+    background-color: #157da4;
 }
 
 .block_name {
@@ -93,7 +98,36 @@
     display: none;
 }
 
+.list_active_passive {
+    position: absolute;
+    bottom: 48px;
+    left: 15px;
+    color: white;
+    font-size: 10px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    display: none;
+}
+
+.list_speech_setting {
+    position: absolute;
+    bottom: 24px;
+    left: 16px;
+    color: white;
+    font-size: 10px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    display: none;
+}
+
 .block_dropdown {
+    position: absolute;
+    right: 10px;
+    bottom: 16px;
+    display: none;
+}
+
+.list_dropdown {
     position: absolute;
     right: 10px;
     bottom: 16px;
@@ -105,21 +139,24 @@
     transition: width 0.3s ease, height 0.3s ease;
     display: none;
 }
-
-.element1 {
-    position: absolute;
-    top: 162px;
-    left: 42px;
-    width: 40px;
-    height: 40px;
+.list_elements {
     margin: 0 auto;
-    background-color: #5299FF;
     transition: width 0.3s ease, height 0.3s ease;
+    display: none;
+}
+
+.block_list {
+    position: relative;
+    width: 74px;
+    height: 26px;
+    border-radius: 3px;
+    transition: 0.3s all ease;
 }
 
 .dragpoint_blocks {
     z-index: 2;
     position: relative;
+    display: none;
     top: 25px;
     left: -5px;
     width: 10px;
@@ -135,8 +172,8 @@
 .dragpoint_ui {
     z-index: 2;
     position: relative;
-    top: 32px;
-    right: -73px;
+    top: 25px;
+    right: -153px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -214,10 +251,10 @@
 /*----------- Grid ------------*/
 .grid {
     position: fixed;
-    top: 20px;
+    top: 0px;
     height: 100vh;
     width: 100vw;
     opacity: 0.5;
     z-index: -2;
-    transform: translate(200px, 80px)
+    transform: translate(200px, 78px)
 }

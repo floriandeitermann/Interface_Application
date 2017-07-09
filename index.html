@@ -41,20 +41,20 @@
 
     <div class="blocks_container">
 
-        <div class="block_element draggable">
+        <div class="block_element draggable ">
             <div id="d0" class="dragpoint dragpoint_blocks draggable2"></div>
             <div class="block speech_block">
                 <div class="block_name">SPEECH</div>
-                <div class="block_speech_setting">TYPE:</div>
-                <fieldset class="block_dropdown">
-                    <select name="speed" id="speed">
-                        <option selected="selected">Contained</option>
-                        <option>Slide</option>
-                    </select>
-                </fieldset>
+                <!--<div class="block_speech_setting">TYPE:</div>-->
+                <!--<fieldset class="block_dropdown">-->
+                <!--<select name="speed" id="speed">-->
+                <!--<option selected="selected">Contained</option>-->
+                <!--<option>Slide</option>-->
+                <!--</select>-->
+                <!--</fieldset>-->
             </div>
             <!--<div class="states">-->
-                <!--<img src="img/_blocks_top/states.png" alt="" width="159px">-->
+            <!--<img src="img/_blocks_top/states.png" alt="" width="159px">-->
             <!--</div>-->
         </div>
 
@@ -76,6 +76,24 @@
             </div>
         </div>
 
+        <div class="block_element draggable">
+            <div id="d2" class="dragpoint_blocks dragpoint draggable2"></div>
+            <div class="block rotate_block">
+                <div class="block_name">ROTATE</div>
+                <!--<div class="block_speech_setting">TYPE:</div>-->
+                <!--<fieldset class="block_dropdown">-->
+                <!--<select name="speed" id="speed">-->
+                <!--<option selected="selected">Contained</option>-->
+                <!--<option>Slide</option>-->
+                <!--</select>-->
+                <!--</fieldset>-->
+            </div>
+            <!--<div class="states">-->
+            <!--<img src="img/_blocks_top/states.png" alt="" width="159px">-->
+            <!--</div>-->
+        </div>
+
+
     </div>
 
     <div class="top_right">
@@ -90,15 +108,30 @@
 <!--</a>-->
 
 
-
 <!-------------------LEFT------------------->
 <div class="side_menu_left">
     <div class="list"><img src="img/_data_left/list.png" alt="" width="200px"></div>
 
     <div class="filter"><img src="img/_data_left/filter.png" alt="" width="128px"></div>
 
-    <div class="element1 draggable">
-        <div id="d2" class="dragpoint dragpoint_ui draggable2"></div>
+    <div class="block_element draggable">
+        <div id="d3" class="dragpoint_ui dragpoint draggable2"></div>
+        <div class="block_list list_block">
+            <div class="block_name">LIST</div>
+            <div class="list_active_passive">
+                <img src="img/_data_left/states_active_passive.png" alt="" width="130px">
+            </div>
+            <div class="list_speech_setting">LINE:</div>
+            <div class="list_dropdown">
+                <select name="speed" id="speed">
+                    <option selected="selected">Horizontal</option>
+                    <option>Vertical</option>
+                </select>
+            </div>
+        </div>
+        <div class="list_elements">
+            <img src="img/_data_left/Elements.png" alt="" width="159px">
+        </div>
     </div>
 
 </div>
@@ -117,7 +150,6 @@
 <script src="lib/jquery-ui.js"></script>
 
 <script type="text/javascript" src="js/draganddrop.js"></script>
-
 
 
 </body>
